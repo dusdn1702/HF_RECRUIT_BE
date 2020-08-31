@@ -1,16 +1,13 @@
 package com.hanium.hfrecruit.controller;
 
-
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
-public class IndexPageController {
-//    RestController 는 page를 리턴안함.
-    @GetMapping("/")
+public class SpecsPageController {
+    @GetMapping("/specs")
     public String index(){
 
-        return "index";
+        return "myspec";
     }
-
 }
